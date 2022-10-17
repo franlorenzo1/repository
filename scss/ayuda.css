@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #37373b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252A;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: auto;
+  top: 0%;
+}
+header .inicio {
+  background-color: #24252A;
+  font-family: Montserrat, sans-serif;
+}
+header .inicio .nombre {
+  background-color: #24252A;
+}
+
+.portada {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 100px;
+}
+.portada .texto1 {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: solid;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    background-color: #37373b;
+  }
+  .portada img {
+    width: 450px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .portada img {
+    width: 550px;
+    height: 500px;
+  }
+}/*# sourceMappingURL=ayuda.css.map */

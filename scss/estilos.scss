@@ -1,51 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #37373b;
-  font-family: Montserrat,sans-serif; }
-
-.header li, a, button {
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
-  background-color: #24252afa;
-  text-align: center;
-  header{
-    position: sticky;
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252afa;
-    z-index: auto;
-    .logo{
-      cursor: pointer;
-      .nav_links{
-        list-style: none;
-        background-color: #24252afa;
-        .nav_links li{
-          display: inline-block;
-          padding: 0px 20px;
-          background-color: #24252afa;
-          .nav_links li a{
-            transition: all 0.3s ease 0s;
-            .nav_links li a:hover{
-              color: #0088a9;
-            }
-          }
-        } 
-      }
-    }
-  }
-}
+@import "variables";
+@import "hombres";
+@import "resets";
+@import "mujeres";
+@import "nosotros";
+@import "ayuda";
 
 
-/*header {
+header {
   position: sticky;
   top: 0%;
   display: flex;
@@ -53,40 +15,14 @@
   align-items: center;
   padding: 30px 10%;
   background-color: #24252afa;
-  z-index: auto; }
-
-.logo {
-  cursor: pointer; }
-
-.nav_links {
-  list-style: none;
-  background-color: #24252afa; }
-
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
-  background-color: #24252afa; }
-
-.nav_links li a {
-  transition: all 0.3s ease 0s; }
-
-.nav_links li a:hover {
-  color: #0088a9; }
-
-h2 {
-  text-align: center;
-  font-size: 100px;
-  font-family: Montserrat, sans-serif;
-  color: #edf0f1;
-  transition: all 0.3s ease 0s; 
-  h2:hover{
-    color: #0088a9;
-  }
+  z-index: auto;
+ }
+.titulo{
+    text-align: center;
+    font-size: 100px;
+    font-family: Montserrat, sans-serif;
+    color: #edf0f1;
 }
-
-h2 :hover {
-  color: #0088a9; }
-*/
 hr {
   color: #edf0f1; }
 
@@ -94,180 +30,64 @@ hr {
   display: flex;
   margin-top: 80px;
   justify-content: space-evenly;
-  .categorias a{
-    background-color: #37373b;
-    .ropa-hombre img{
-      width: 500px;
-      height: 500px;
-      margin-top: 50px;
-      transition: 1s;
-      border-radius: 10px;
-      .ropa-hombre img:hover{
-        transform: scale(1.1);
-        .ropa-hombre h1{
-          font-family: Montserrat, sans-serif;
-          font-size: 30px;
-          color: #edf0f1;
-          .ropa-mujer img{
-            width: 500px;
-            height: 500px;
-            margin-top: 50px;
-            transition: 1s;
-            border-radius: 10px;
-            .ropa-mujer img:hover{
-              transform: scale(1.1);
-              .ropa-mujer h1{
-                font-family: Montserrat, sans-serif;
-                font-size: 30px;
-                color: #edf0f1;
-                .nosotros img{
-                  margin-bottom: 100px;
-                  .nosotros img:hover{
-                    transform: scale(1.1);
-                    .nosotros h1{
-                      font-family: Montserrat, sans-serif;
-                      font-size: 30px;
-                      color: #edf0f1;
-                    }
-                  }
-                }
-              } 
-            }
-          }
-        }
+  .ropa-hombre img{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    transition: 1s;
+    border-radius: 10px;
+    &:hover{
+      transform: scale(1.1);
+      .ropa-hombre h1{
+        font-family: Montserrat, sans-serif;
+        font-size: 30px;
+        color: #edf0f1;
       }
     }
   }
-}  
-/*
-
-
-.categorias a {
-  background-color: #37373b; }
-
-.ropa-hombre img {
-  width: 500px;
-  height: 500px;
-  margin-top: 50px;
-  transition: 1s;
-  border-radius: 10px; }
-
-.ropa-hombre img:hover {
-  transform: scale(1.1); }
-
-.ropa-hombre h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: 30px;
-  color: #edf0f1; }
-
-.ropa-mujer img {
-  width: 500px;
-  height: 500px;
-  margin-top: 50px;
-  transition: 1s;
-  border-radius: 10px; }
-
-.ropa-mujer img:hover {
-  transform: scale(1.1); }
-
-.ropa-mujer h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: 30px;
-  color: #edf0f1; }
-
-.nosotros {
-  margin-bottom: 100px; }
-
-.nosotros img {
-  width: 500px;
-  height: 500px;
-  margin-top: 50px;
-  transition: 1s;
-  border-radius: 10px; }
-
-.nosotros img:hover {
-  transform: scale(1.1); }
-
-.nosotros h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: 30px;
-  color: #edf0f1; }
-
-.categorias {
-  display: flex;
-  margin-top: 80px;
-  justify-content: space-evenly; }
-*/
-
-.footer {
-  padding: 40px 0;
-  background-color: #9b9b9b; 
+  .ropa-mujer img{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    transition: 1s;
+    border-radius: 10px;
+    &:hover{
+      transform: scale(1.1);
+      .ropa-mujer h1{
+        font-family: Montserrat, sans-serif;
+        font-size: 30px;
+        color: #edf0f1;
+      }
+    }
+  }
+ .nosotros img{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    transition: 1s;
+    border-radius: 10px;
+    &:hover{
+      transform: scale(1.1);
+      .nosotros h1{
+        font-family: Montserrat, sans-serif;
+        font-size: 30px;
+        color: #edf0f1;
+      }
+    }
+  }
 }
 
-.social {
-  text-align: center;
-  padding-bottom: 25px;
-  color: #ccc;
-  background-color: #9b9b9b; }
+  
+  
 
-.social i {
-  background-color: #9b9b9b; }
-
-.social a {
-  font-size: 24px;
-  color: inherit;
-  border: 1px solid #ccc;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin: 0 8px;
-  background-color: #9b9b9b; }
-
-.list {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #9b9b9b; }
-
-.list a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-  background-color: #9b9b9b; }
-
-.list li {
-  display: inline-block;
-  padding: 0 15px;
-  background-color: #9b9b9b; }
 
 @media screen and (max-width: 768px) {
   * {
     background-color: #37373b; }
-  .nav_links li {
-    padding: 0px 10px;
-    padding-top: 5px; } }
+  }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .nav_links li {
-    padding: 0px 10px;
-    padding-top: 5px; } }
+  
+}
 
-.boton img {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 50px;
-  box-shadow: 0px 1px 10px black;
-  z-index: 100; }
+    
