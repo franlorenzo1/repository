@@ -35,18 +35,18 @@ header{
 }
 @media screen and (max-width: 768px) {
     * {
-          background-color:#37373b;
-      }
+        background-color:#37373b;
+    }
       
-      .portada img{
+    .portada img{
         width: 450px;
         height: 400px;
-        }
     }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-        .portada img{
+    .portada img{
         width: 550px;
         height: 500px;
-        }
     }
+}

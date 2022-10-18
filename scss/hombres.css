@@ -48,22 +48,28 @@ header {
   * {
     background-color: #37373b;
   }
-  .nav_links li {
-    padding: 0px 10px;
-    padding-top: 5px;
+  .img {
+    margin-right: 15px;
+    width: 60px;
   }
-  .grid img {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .grid .grid img {
     width: 250px;
     height: 250px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .nav_links li {
-    padding: 0px 10px;
-    padding-top: 5px;
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
   }
-  .grid img {
-    width: 350px;
-    height: 350px;
+  .grid .grid img {
+    width: 250px;
+    height: 250px;
   }
 }/*# sourceMappingURL=hombres.css.map */
