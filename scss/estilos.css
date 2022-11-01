@@ -10,6 +10,14 @@
   font-family: Montserrat, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #37373b;
+  font-family: Montserrat, sans-serif;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -76,14 +84,6 @@ header {
     height: 250px;
   }
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #37373b;
-  font-family: Montserrat, sans-serif;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -253,22 +253,22 @@ header {
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-  background-color: #24252A;
-  position: -webkit-sticky;
-  position: sticky;
+  background-color: rgba(36, 37, 42, 0.9803921569);
   z-index: auto;
-  top: 0%;
 }
 header .inicio {
-  background-color: #24252A;
+  background-color: rgba(36, 37, 42, 0.9803921569);
   font-family: Montserrat, sans-serif;
 }
 header .inicio .nombre {
-  background-color: #24252A;
+  background-color: rgba(36, 37, 42, 0.9803921569);
 }
 
 .portada {
@@ -327,8 +327,8 @@ hr {
   justify-content: space-evenly;
 }
 .categorias .ropa-hombre img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin-top: 50px;
   transition: 1s;
   border-radius: 10px;
@@ -342,8 +342,8 @@ hr {
   color: #edf0f1;
 }
 .categorias .ropa-mujer img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin-top: 50px;
   transition: 1s;
   border-radius: 10px;
@@ -357,8 +357,8 @@ hr {
   color: #edf0f1;
 }
 .categorias .nosotros img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin-top: 50px;
   transition: 1s;
   border-radius: 10px;
@@ -376,8 +376,8 @@ hr {
   * {
     background-color: #37373b;
   }
-  .img {
-    margin-right: 15px;
-    width: 60px;
+  #imagen {
+    width: auto;
+    margin-right: 5px;
   }
 }/*# sourceMappingURL=estilos.css.map */

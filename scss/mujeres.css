@@ -39,6 +39,8 @@ header {
   transition: 1s;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 400px;
+  height: 400px;
 }
 .grid.grid img:hover {
   transform: scale(1.1);
@@ -60,6 +62,15 @@ header {
   .grid .grid img {
     width: 250px;
     height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    background-color: #37373b;
+  }
+  #imagen {
+    width: auto;
+    margin-right: 5px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {

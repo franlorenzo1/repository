@@ -1,0 +1,22 @@
+@mixin imagen {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    transition: 1s;
+    border-radius: 10px;
+}
+@mixin h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    color: $color-dos;
+}
+@mixin header {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: $color-uno;
+    z-index: auto;
+}

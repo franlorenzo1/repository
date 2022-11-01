@@ -81,8 +81,8 @@ header {
   * {
     background-color: #37373b;
   }
-  .img {
-    margin-right: 15px;
-    width: 60px;
+  #imagen {
+    width: auto;
+    margin-right: 5px;
   }
 }/*# sourceMappingURL=nosotros.css.map */

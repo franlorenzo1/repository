@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import "variables";
+@import "mixins";
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #37373b;
+    background-color: $color-primario;
     font-family: Montserrat,sans-serif;
 }
 header{
-    position: sticky;
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252afa;
-    z-index: auto;
+    @include header;
 }
 .contenedor{
     width: 100%;
@@ -77,12 +72,12 @@ header{
 
 @media screen and (max-width: 768px) {
     * {
-        background-color:#37373b;
+        background-color: $color-primario;
     }
-    .img{
-        margin-right: 15px;
-        width: 60px;
-    }    
+    #imagen{
+        width: auto;
+        margin-right: 5px;
+      } 
 }
 
 

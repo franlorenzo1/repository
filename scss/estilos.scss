@@ -1,77 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import "variables";
-@import "hombres";
 @import "resets";
+@import "mixins";
+@import "hombres";
 @import "mujeres";
 @import "nosotros";
 @import "ayuda";
 
 
 header {
-  position: sticky;
-  top: 0%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #24252afa;
-  z-index: auto;
- }
+  @include header;
+}
 .titulo{
     text-align: center;
     font-size: 100px;
     font-family: Montserrat, sans-serif;
-    color: #edf0f1;
+    color: $color-dos;
 }
 hr {
-  color: #edf0f1; }
+  color: $color-dos; }
 
 .categorias{
   display: flex;
   margin-top: 80px;
   justify-content: space-evenly;
   .ropa-hombre img{
-    width: 500px;
-    height: 500px;
-    margin-top: 50px;
-    transition: 1s;
-    border-radius: 10px;
+    @include imagen;
     &:hover{
       transform: scale(1.1);
       .ropa-hombre h1{
-        font-family: Montserrat, sans-serif;
-        font-size: 30px;
-        color: #edf0f1;
+        @include h1;
       }
     }
   }
   .ropa-mujer img{
-    width: 500px;
-    height: 500px;
-    margin-top: 50px;
-    transition: 1s;
-    border-radius: 10px;
+    @include imagen;
     &:hover{
       transform: scale(1.1);
       .ropa-mujer h1{
-        font-family: Montserrat, sans-serif;
-        font-size: 30px;
-        color: #edf0f1;
+        @include h1;
       }
     }
   }
  .nosotros img{
-    width: 500px;
-    height: 500px;
-    margin-top: 50px;
-    transition: 1s;
-    border-radius: 10px;
+    @include imagen;
     &:hover{
       transform: scale(1.1);
       .nosotros h1{
-        font-family: Montserrat, sans-serif;
-        font-size: 30px;
-        color: #edf0f1;
+        @include h1;
       }
     }
   }
@@ -83,12 +59,12 @@ hr {
 
 @media screen and (max-width: 768px) {
   * {
-    background-color:#37373b;
+    background-color: $color-primario;
   }
-  .img{
-    margin-right: 15px;
-    width: 60px;
-  }  
+  #imagen{
+    width: auto;
+    margin-right: 5px;
+  }
 }
 
 

@@ -1,23 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import "variables";
+@import "mixins";
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #37373b;}
+    background-color: $color-primario;}
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252A;
-    position: sticky;
-    z-index: auto;
-    top: 0%;
+    @include header;
     .inicio{
-        background-color: #24252A;
+        background-color: $color-uno;
         font-family: Montserrat, sans-serif; 
         .nombre{
-            background-color: #24252A;
+            background-color: $color-uno;
         }
     }
 }
@@ -35,11 +31,15 @@ header{
 }
 @media screen and (max-width: 768px) {
     * {
-        background-color:#37373b;
+        background-color: $color-primario;
     }
       
+    #imagen{
+        width: auto;
+        margin-right: 5px;
+    }
     .portada img{
-        width: 450px;
+        width: 400px;
         height: 400px;
     }
 }
